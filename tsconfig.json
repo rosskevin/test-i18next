@@ -2,7 +2,6 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
-    // "checkJs": true,
     "jsx": "react",
     "module": "commonjs",
     "moduleResolution": "node",
@@ -10,9 +9,7 @@
     "outDir": "./build/",
     "removeComments": false,
     "sourceMap": true,
-    "target": "es2015",
-    // Changing the following setting to TRUE fixes tests & the i18next type error in our  web app, but
-    // it breaks dozens of other libraries in our app.
+    "target": "es5",
     "esModuleInterop": false,
     "lib": ["es6", "dom"],
     "noUnusedLocals": true,
