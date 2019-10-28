@@ -1,6 +1,7 @@
 # Test Repo (i18next, React, Typescript, Jest/Enzyme, Webpack)
 
 `esModuleInterop: true`
+
 `import i18next from 'i18next'`
 
 This branch is recommended settings for i18next and typescript.
