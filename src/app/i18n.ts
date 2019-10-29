@@ -2,7 +2,7 @@ import { initReactI18next } from 'react-i18next'
 import { appStrings } from '../../assets/i18n/appStrings.json'
 
 // 1. With following line, the webapp works but tests fail with type error
-import i18n from 'i18next'
+import i18n, { TFunction } from 'i18next'
 
 // 2. With the following line, tests pass but webapp fails in browser with type error
 // import * as i18n from 'i18next';
@@ -20,7 +20,7 @@ i18n.use(initReactI18next).init(
     fallbackLng: 'en',
     ns: ['translation', 'help', 'settings'],
   },
-  (err: Error, t: i18n.TFunction) => {
+  (err: Error, t: TFunction) => {
     if (err) {
       console.error(`i18Next initialization error: ${err.message}`)
     } else {
